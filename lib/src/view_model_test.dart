@@ -52,7 +52,7 @@ class FlowTestCase<V> {
     required Iterable<V> expect,
   }) : _expect = expect;
 
-  final DataFlow<V> flow;
+  final FlowVm<V> flow;
   final Iterable<V> _expect;
   late final received = <V>[];
 
