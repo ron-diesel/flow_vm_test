@@ -54,7 +54,7 @@ class FlowTestCase<V> {
 
   final DataFlow<V> flow;
   final Iterable<V> _expect;
-  late final received = <V>[flow.value];
+  late final received = <V>[];
 
   void _listener() {
     received.add(flow.value);
